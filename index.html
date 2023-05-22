@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="calculadora, calculos, numeros">
+    <meta name="description" content="calculator sa, compañia">
+    <meta name="author" content="lucas dalto">
+    <meta name="robots" content="index">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Inconsolata&display=swap" rel="stylesheet">
+    <link rel="icon" href="/imagenes/icono.ico">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type= "text/css" href="/css/style.css">
+   <script src="/js/Display.js" type="text/javascript"></script>
+  <script src="/js/Calculadora.js" type="text/javascript"></script>
+  <script src="/js/index.js" type="text/javascript" defer></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="calculadora">
+     <section class="pantalla">
+        <div id="valor-anterior"></div>
+        <div id="valor-actual"></div>
+        
+        
+        
+      </section>
+        
+       <br>
+        <div class="botones">
+       <button class="botones__b">7</button>
+        <button class="botones__b">8</button> 
+        <button class="botones__b">9</button>
+        <button class="botones__b-2" onclick="display.borrarTodo()">C</button>
+        <button class="botones__op" value="multiplicar">&times;</button>
+        <button class="botones__b">4</button>
+        <button class="botones__b">5</button>
+        <button class="botones__b">6</button>
+        <button class="botones__op" value="restar">&minus;</button>
+       <button class="botones__b">1</button>
+        <button class="botones__b">3</button>
+        <button class="botones__b" onclick="display.borrar()">&lAarr;</button>
+        <button class="botones__b">0</button>
+        <button class="botones__b">.</button>
+       <button class="botones__op" value="dividir">&divide;</button>
+        <button class="botones__op" value="sumar">&#43;</button>
+        <button class="botones__op" value="igual">&#61;</button>
+        </div>
+        </div>
+  </body>
+</html>
